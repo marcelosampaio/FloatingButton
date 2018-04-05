@@ -61,12 +61,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let  off = self.tableView.contentOffset.y
-        
-        btn.frame = CGRect(x: 285, y: 58, width: btn.frame.size.width, height: btn.frame.size.height)
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        
+//        let  off = self.tableView.contentOffset.y
+//        
+//        btn.frame = CGRect(x: 285, y: 58, width: btn.frame.size.width, height: btn.frame.size.height)
+//    }
     
     
 }
