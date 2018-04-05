@@ -33,18 +33,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func floatingButton(){
 //        let btn = UIButton(type: .custom)
         btn.frame = CGRect(x: 180, y: 58, width: 40, height: 40)
-        btn.setTitle("All Defects", for: .normal)
+        btn.setTitle("X", for: .normal)
         btn.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         btn.clipsToBounds = true
-        btn.layer.cornerRadius = 50
-        btn.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        btn.layer.cornerRadius = 20
+        btn.layer.borderColor = UIColor.black.cgColor
         btn.layer.borderWidth = 3.0
-        btn.target(forAction: #selector(didSelectFloatingButton), withSender: self)
-        
-        
-        
-        
-        
+        btn.addTarget(self, action: #selector(didSelectFloatingButton), for: UIControlEvents.touchUpInside)
+
         
         view.addSubview(btn)
     }
